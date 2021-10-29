@@ -1,0 +1,87 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+    users: [
+        {
+            name: 'Amandi',
+            email: 'amadonlinkserv@gmail.com',
+            password: bcrypt.hashSync('somtoo45a', 8),
+            isAdmin: true,
+        },
+        {
+            name: 'Iroka',
+            email: 'iroka@gmail.com',
+            password: bcrypt.hashSync('somtoo45a', 8),
+            isAdmin: false,
+        }
+    ],
+    products: [
+        {
+            name: 'Nike slim shirt',
+            category: 'Shirt',
+            image: '/images/p1.jpg',
+            price: 120, 
+            countInStock: 10,
+            brand: 'Nike',
+            rating: 4.5,
+            numReviews: 10,
+            description: 'High quality product',
+        },
+        {
+            name: 'Adidas slim shirt',
+            category: 'Shirt',
+            image: '/images/p2.jpg',
+            price: 160, 
+            countInStock: 20,
+            brand: 'Adidas',
+            rating: 4.5,
+            numReviews: 10,
+            description: 'High quality product',
+        },
+        {
+            name: 'Lakosa slim trouser',
+            category: 'Trouser',
+            image: '/images/p3.jpg',
+            price: 250, 
+            countInStock: 0,
+            brand: 'Lakosa',
+            rating: 4.5,
+            numReviews: 20,
+            description: 'High quality product',
+        },
+        {
+            name: 'Gusi slim shirt',
+            category: 'Shirt',
+            image: '/images/p4.jpg',
+            price: 180, 
+            countInStock: 15,
+            brand: 'Gusi',
+            rating: 4.5,
+            numReviews: 12,
+            description: 'High quality product',
+        },
+        {
+            name: 'Puma slim pant',
+            category: 'Pant',
+            image: '/images/p5.jpg',
+            price: 80, 
+            countInStock: 5,
+            brand: 'Puma',
+            rating: 4.5,
+            numReviews: 17,
+            description: 'High quality product',
+        },
+        {
+            name: 'Timber land slim pant',
+            category: 'Pant',
+            image: '/images/p6.jpg',
+            price: 65, 
+            countInStock: 12,
+            brand: 'Timber land',
+            rating: 4.5,
+            numReviews: 15,
+            description: 'High quality product',
+        },
+    ],
+};
+export default data;
